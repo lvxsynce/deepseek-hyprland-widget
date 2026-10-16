@@ -1,0 +1,17 @@
+# ───────── DeepSeek overlay (widget) ─────────
+# Всплывает по хоткею поверх всех окон и прячется обратно.
+#
+# ВАЖНО: match:class = chrome-chat\.deepseek\.com.*
+# Chromium на Wayland игнорирует --class и отдаёт класс
+# chrome-chat.deepseek.com__-Default. Если написать ^(deepseek)$,
+# правило просто не сработает и окно развернётся на весь экран.
+
+windowrule {
+    name = "deepseek_widget"
+    match:class = chrome-chat\.deepseek\.com.*
+    float = on
+    center = on
+    size = 600 650
+    stay_focused = on
+    workspace = special:ai silent
+}

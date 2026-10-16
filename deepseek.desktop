@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DeepSeek
+Comment=DeepSeek chat as a floating overlay
+Exec=chromium --class=deepseek --user-data-dir=%h/.config/deepseek --ozone-platform-hint=auto --app=https://chat.deepseek.com
+StartupWMClass=chrome-chat.deepseek.com__-Default
+Terminal=false
+Type=Application
+Categories=Network;Utility;

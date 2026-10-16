@@ -1,0 +1,9 @@
+# локальный профиль chromium с сессией DeepSeek
+config/deepseek/
+
+*.bak
+*.bak.*
+
+# всякое случайное
+.DS_Store
+*.swp
